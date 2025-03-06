@@ -1,0 +1,17 @@
+project:
+  type: book
+
+book:
+  title: "Karte Hannover"
+#  author: "Norah Jones"
+  date: today
+  favicon: ./images/favicon-32x32.png
+  chapters:
+    - index.ipynb
+
+format:
+  html:
+    toc: false
+    number-sections: false
+    theme: #see https://bootswatch.com/
+      - united
