@@ -1,5 +1,6 @@
 project:
   type: book
+  output-dir: docs
 
 book:
   title: "Karte Hannover"
@@ -8,6 +9,7 @@ book:
   favicon: ./images/favicon-32x32.png
   chapters:
     - index.ipynb
+  
 
 format:
   html:
