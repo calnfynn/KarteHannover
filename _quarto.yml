@@ -9,7 +9,8 @@ book:
   favicon: ./images/favicon-32x32.png
   chapters:
     - index.ipynb
-  
+  repo-url: https://github.com/NFDI4Culture/KarteHannover
+  repo-actions: [source]
 
 format:
   html:
