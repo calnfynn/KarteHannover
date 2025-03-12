@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-03-10">
+<meta name="dcterms.date" content="2025-03-06">
 
 <title>Karte Hannover</title>
 <style>
@@ -99,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 10, 2025</p>
+      <p class="date">March 6, 2025</p>
     </div>
   </div>
   
@@ -111,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="https://query.wikidata.org/embed.html#%23defaultView%3AMap%0A%0ASELECT%20DISTINCT%20%3Fitem%20%3FitemLabel%20%3Flatitude%20%3Flongitude%20%3Fgeo%20%3FlocationLabel%20WHERE%20%7B%0A%20VALUES%20%3Ftype%20%7B%20wd%3AQ1007870%20wd%3AQ33506%20wd%3AQ2668072%20wd%3AQ7075%20wd%3AQ166118%20wd%3AQ56190453%20%7D%0A%20%20%23art%20gallery%2C%20museum%2C%20collection%2C%20library%2C%20archive%2C%20memorial%0A%20%20%0A%20%20%3Fitem%20wdt%3AP31%2a%20%3Ftype%3B%20%23%20Must%20be%20an%20instance%20of%20a%20relevant%20cultural%20type%0A%20%20%20%20%20%20%20%20%28wdt%3AP276%7Cwdt%3AP131%29%2a%20wd%3AQ1715.%20%20%23%20Located%20in%20Hannover%20or%20a%20part%20of%20Hannover%20%28or%20a%20part%20of%20a%20part%20of%20Hannover...%29%20%0A%20%20%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP625%20%3Fgeo%20%7D%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP131%20%3Flocation%20%7D%20%0A%20%20%23%20Get%20coordinates%20%26%20location%20if%20they%20exist%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22de%2C%5BAUTO_LANGUAGE%5D%22.%20%7D%0A%0A%20%20BIND%28geof%3Alatitude%28%3Fgeo%29%20AS%20%3Flatitude%29.%0A%20%20BIND%28geof%3Alongitude%28%3Fgeo%29%20AS%20%3Flongitude%29%0A%7D%0A%0AORDER%20BY%20DESC%28%3Fgeo%29%0A%0A">Wikidata Link</a></p>
+<p><a href="https://query.wikidata.org/embed.html#%23defaultView%3AMap%0A%0ASELECT%20DISTINCT%20%3Fitem%20%3FitemLabel%20%3Flocation%20%3FlocationLabel%20%3Flatitude%20%3Flongitude%20%3Fgeo%20WHERE%20%7B%0A%20%20VALUES%20%3Ftype%20%7B%20wd%3AQ1007870%20wd%3AQ33506%20wd%3AQ166118%20wd%3AQ2668072%20wd%3AQ667276%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20wd%3AQ464980%20wd%3AQ56190453%20%7D%0A%20%20%23art%20gallery%2C%20museum%2C%20archive%2C%20collection%2C%20art%20exhibition%2C%20%0A%20%20%23%20exhibition%2C%20memorial%0A%20%20%0A%20%20VALUES%20%3Fplaces%20%7B%20wd%3AQ1715%20%7D%20%0A%0A%20%20%23%20Find%20locations%20that%20match%20%3Fplaces%20directly%20OR%20one%20level%20above%2Fbelow%0A%20%20%3Fplace%20%28wdt%3AP131%7C%5Ewdt%3AP131%29%20%3Fplaces.%20%0A%0A%20%20%23%20Find%20items%20that%20are%20in%20those%20locations%0A%20%20%3Fitem%20wdt%3AP31%20%3Ftype%3B%20%20%23%20Must%20be%20an%20instance%20of%20a%20relevant%20cultural%20type%0A%20%20%20%20%20%20%20%20wdt%3AP276%7Cwdt%3AP131%20%3Fplace.%20%20%23%20Located%20in%20one%20of%20the%20places%0A%20%20%0A%20%20%3Fitem%20wdt%3AP625%20%3Fgeo.%20%20%23%20Get%20coordinates%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%2C%5BAUTO_LANGUAGE%5D%22.%20%7D%0A%0A%20%20BIND%28geof%3Alatitude%28%3Fgeo%29%20AS%20%3Flatitude%29.%0A%20%20BIND%28geof%3Alongitude%28%3Fgeo%29%20AS%20%3Flongitude%29%0A%7D">Wikidata Link</a></p>
 <div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -&gt; Trust Notebook</span><iframe srcdoc="<!DOCTYPE html>
 <html>
 <head>
@@ -139,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
             <meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; />
             <style>
-                #map_42c59ae79452f7262b859247e17e0c5d {
+                #map_fa20dd90c08ed0b5a386e7d6d4c57f61 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -149,20 +149,18 @@ ul.task-list li input[type="checkbox"] {
                 .leaflet-container { font-size: 1rem; }
             </style>
         
-    <script src=&quot;https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js&quot;></script>
-    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css&quot;/>
 </head>
 <body>
     
     
-            <div class=&quot;folium-map&quot; id=&quot;map_42c59ae79452f7262b859247e17e0c5d&quot; ></div>
+            <div class=&quot;folium-map&quot; id=&quot;map_fa20dd90c08ed0b5a386e7d6d4c57f61&quot; ></div>
         
 </body>
 <script>
     
     
-            var map_42c59ae79452f7262b859247e17e0c5d = L.map(
-                &quot;map_42c59ae79452f7262b859247e17e0c5d&quot;,
+            var map_fa20dd90c08ed0b5a386e7d6d4c57f61 = L.map(
+                &quot;map_fa20dd90c08ed0b5a386e7d6d4c57f61&quot;,
                 {
                     center: [52.38, 9.74],
                     crs: L.CRS.EPSG3857,
@@ -176,332 +174,66 @@ ul.task-list li input[type="checkbox"] {
 
         
     
-            var tile_layer_857f6c5a301c7344f606b675808ddbae = L.tileLayer(
+            var tile_layer_04b0945650a131cac93945574e0fa4e7 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
         
     
-            tile_layer_857f6c5a301c7344f606b675808ddbae.addTo(map_42c59ae79452f7262b859247e17e0c5d);
+            tile_layer_04b0945650a131cac93945574e0fa4e7.addTo(map_fa20dd90c08ed0b5a386e7d6d4c57f61);
         
     
-            L.control.fullscreen(
-                {&quot;forceSeparateButton&quot;: true, &quot;position&quot;: &quot;topright&quot;, &quot;title&quot;: &quot;Vollbild&quot;, &quot;titleCancel&quot;: &quot;Schlie\u00dfen&quot;}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-            var marker_c9ba5f28ccc81f6db4c25083cf25a22b = L.marker(
-                [52.40406, 9.82038],
+            var marker_10eccf38c252014306aa0ad055f1e219 = L.marker(
+                [52.36653832, 9.716278733],
                 {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
+            ).addTo(map_fa20dd90c08ed0b5a386e7d6d4c57f61);
         
     
-        var popup_7c992c0712e3a3d618d614708e92de47 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_cc23dfc76ee20d065cb29478131f77f1 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_6a82c3c36f5959038bbfa22468fc8b6f = $(`<div id=&quot;html_6a82c3c36f5959038bbfa22468fc8b6f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q28738627' target='_blank'>Bibliothek der Bundesanstalt für Geowissenschaften und Rohstoffe und des Landesamts für Bergbau, Energie und Geologie im Geozentrum Hannover</a></h3>         Hannover</div>`)[0];
-                popup_7c992c0712e3a3d618d614708e92de47.setContent(html_6a82c3c36f5959038bbfa22468fc8b6f);
+                var html_7b3d565e9dfc089ab89f30638f6ac284 = $(`<div id=&quot;html_7b3d565e9dfc089ab89f30638f6ac284&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q131731708' target='_blank'>Falkenberg Gallery for New Art</a></h3>         </div>`)[0];
+                popup_cc23dfc76ee20d065cb29478131f77f1.setContent(html_7b3d565e9dfc089ab89f30638f6ac284);
             
         
 
-        marker_c9ba5f28ccc81f6db4c25083cf25a22b.bindPopup(popup_7c992c0712e3a3d618d614708e92de47)
+        marker_10eccf38c252014306aa0ad055f1e219.bindPopup(popup_cc23dfc76ee20d065cb29478131f77f1)
         ;
 
         
     
     
-            marker_c9ba5f28ccc81f6db4c25083cf25a22b.bindTooltip(
+            marker_10eccf38c252014306aa0ad055f1e219.bindTooltip(
                 `<div>
-                     Bibliothek der Bundesanstalt für Geowissenschaften und Rohstoffe und des Landesamts für Bergbau, Energie und Geologie im Geozentrum Hannover
+                     Falkenberg Gallery for New Art
                  </div>`,
                 {&quot;sticky&quot;: true}
             );
         
     
-            var marker_b77441ceab90e1c64cee227546ccc48b = L.marker(
-                [52.384001, 9.811558],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_91f84a9fe0cdbc55f90da511eee89fac = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_1894ac59d60947b487313efbd5f49242 = $(`<div id=&quot;html_1894ac59d60947b487313efbd5f49242&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q76636159' target='_blank'>Münzkabinett der TUI AG</a></h3>         Hannover</div>`)[0];
-                popup_91f84a9fe0cdbc55f90da511eee89fac.setContent(html_1894ac59d60947b487313efbd5f49242);
-            
-        
-
-        marker_b77441ceab90e1c64cee227546ccc48b.bindPopup(popup_91f84a9fe0cdbc55f90da511eee89fac)
-        ;
-
-        
-    
-    
-            marker_b77441ceab90e1c64cee227546ccc48b.bindTooltip(
-                `<div>
-                     Münzkabinett der TUI AG
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_4a7dd8adc1ed3f935456ff1cb9527300 = L.marker(
-                [52.361007196, 9.845988302],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_f99ae407a9bf18c69818df74c3526187 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_10a32b2b57695e9600d3f22aee258c64 = $(`<div id=&quot;html_10a32b2b57695e9600d3f22aee258c64&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q126991882' target='_blank'>Galerie am Tiergarten</a></h3>         Anderten</div>`)[0];
-                popup_f99ae407a9bf18c69818df74c3526187.setContent(html_10a32b2b57695e9600d3f22aee258c64);
-            
-        
-
-        marker_4a7dd8adc1ed3f935456ff1cb9527300.bindPopup(popup_f99ae407a9bf18c69818df74c3526187)
-        ;
-
-        
-    
-    
-            marker_4a7dd8adc1ed3f935456ff1cb9527300.bindTooltip(
-                `<div>
-                     Galerie am Tiergarten
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_e141baf41305246828c787f52c625b2d = L.marker(
-                [52.362222222, 9.821944444],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_4bf65b3726c8497b7074ce54a69966e8 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_6a29ec0f93388d792dba2d156a2bb9c0 = $(`<div id=&quot;html_6a29ec0f93388d792dba2d156a2bb9c0&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q64737923' target='_blank'>Galerie Christoph Kühl</a></h3>         Hannover</div>`)[0];
-                popup_4bf65b3726c8497b7074ce54a69966e8.setContent(html_6a29ec0f93388d792dba2d156a2bb9c0);
-            
-        
-
-        marker_e141baf41305246828c787f52c625b2d.bindPopup(popup_4bf65b3726c8497b7074ce54a69966e8)
-        ;
-
-        
-    
-    
-            marker_e141baf41305246828c787f52c625b2d.bindTooltip(
-                `<div>
-                     Galerie Christoph Kühl
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_c5b56db30f5d23d491e8b55bf6d5e0a1 = L.marker(
-                [52.3625, 9.80483],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_b65486338c022bfe27e87421680e84a3 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_b0b24c77f70f7e1d9ba0657eda90afdd = $(`<div id=&quot;html_b0b24c77f70f7e1d9ba0657eda90afdd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q884264' target='_blank'>Blindenmuseum</a></h3>         Kirchrode-Bemerode-Wülferode</div>`)[0];
-                popup_b65486338c022bfe27e87421680e84a3.setContent(html_b0b24c77f70f7e1d9ba0657eda90afdd);
-            
-        
-
-        marker_c5b56db30f5d23d491e8b55bf6d5e0a1.bindPopup(popup_b65486338c022bfe27e87421680e84a3)
-        ;
-
-        
-    
-    
-            marker_c5b56db30f5d23d491e8b55bf6d5e0a1.bindTooltip(
-                `<div>
-                     Blindenmuseum
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_db6107bf3457b52d6dc7bd8f83aaa35b = L.marker(
-                [52.34886, 9.80288],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_efd32ab6d835a3707092066affe31937 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_a6aab042af7cd7cfb7ff12fe13e85654 = $(`<div id=&quot;html_a6aab042af7cd7cfb7ff12fe13e85654&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q130988639' target='_blank'>Hannoversche Allgemeine Zeitung (HAZ), Redaktionsarchiv</a></h3>         Hannover</div>`)[0];
-                popup_efd32ab6d835a3707092066affe31937.setContent(html_a6aab042af7cd7cfb7ff12fe13e85654);
-            
-        
-
-        marker_db6107bf3457b52d6dc7bd8f83aaa35b.bindPopup(popup_efd32ab6d835a3707092066affe31937)
-        ;
-
-        
-    
-    
-            marker_db6107bf3457b52d6dc7bd8f83aaa35b.bindTooltip(
-                `<div>
-                     Hannoversche Allgemeine Zeitung (HAZ), Redaktionsarchiv
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_c4895ea2d43bc9f319cafe2ef0f58043 = L.marker(
-                [52.422954, 9.732118],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_46ebac25ed18591d71aa41bbd1dbc3f5 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_bc1067c033678460c6085792f4d1fe85 = $(`<div id=&quot;html_bc1067c033678460c6085792f4d1fe85&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q125123870' target='_blank'>Sammlungszentrum Hannover</a></h3>         Nord</div>`)[0];
-                popup_46ebac25ed18591d71aa41bbd1dbc3f5.setContent(html_bc1067c033678460c6085792f4d1fe85);
-            
-        
-
-        marker_c4895ea2d43bc9f319cafe2ef0f58043.bindPopup(popup_46ebac25ed18591d71aa41bbd1dbc3f5)
-        ;
-
-        
-    
-    
-            marker_c4895ea2d43bc9f319cafe2ef0f58043.bindTooltip(
-                `<div>
-                     Sammlungszentrum Hannover
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_a8020c2f494eefb4ebd21b1c36da8811 = L.marker(
-                [52.38, 9.75356],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_381d3d67a54f41455d85120f40f5c092 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_82ee42ceaafa1619c53c1f86d0bf638a = $(`<div id=&quot;html_82ee42ceaafa1619c53c1f86d0bf638a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q28738628' target='_blank'>Institut für Entwicklungsplanung und Strukturforschung GmbH an der Universität Hannover, Bibliothek</a></h3>         Mitte</div>`)[0];
-                popup_381d3d67a54f41455d85120f40f5c092.setContent(html_82ee42ceaafa1619c53c1f86d0bf638a);
-            
-        
-
-        marker_a8020c2f494eefb4ebd21b1c36da8811.bindPopup(popup_381d3d67a54f41455d85120f40f5c092)
-        ;
-
-        
-    
-    
-            marker_a8020c2f494eefb4ebd21b1c36da8811.bindTooltip(
-                `<div>
-                     Institut für Entwicklungsplanung und Strukturforschung GmbH an der Universität Hannover, Bibliothek
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_526222f6c3a5b5f444f48c65d5c82513 = L.marker(
-                [52.3877, 9.74278],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_d56b2c44f09f6878d297ad7d9935f580 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_063a37b908879b5e3cd493b4b8492101 = $(`<div id=&quot;html_063a37b908879b5e3cd493b4b8492101&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q28739606' target='_blank'>Kriminologisches Forschungsinstitut Niedersachsen e. V., Bibliothek</a></h3>         Mitte</div>`)[0];
-                popup_d56b2c44f09f6878d297ad7d9935f580.setContent(html_063a37b908879b5e3cd493b4b8492101);
-            
-        
-
-        marker_526222f6c3a5b5f444f48c65d5c82513.bindPopup(popup_d56b2c44f09f6878d297ad7d9935f580)
-        ;
-
-        
-    
-    
-            marker_526222f6c3a5b5f444f48c65d5c82513.bindTooltip(
-                `<div>
-                     Kriminologisches Forschungsinstitut Niedersachsen e. V., Bibliothek
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_8f2283dfe8e9dc5ff4bd8cdf814a4c6d = L.marker(
-                [52.3875, 9.74],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_9a8c53a11988127e317e75703481a054 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_fe242ab694e0f28a51b4a3f73e6bedd9 = $(`<div id=&quot;html_fe242ab694e0f28a51b4a3f73e6bedd9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q1717744' target='_blank'>WOK – World of Kitchen</a></h3>         Hannover</div>`)[0];
-                popup_9a8c53a11988127e317e75703481a054.setContent(html_fe242ab694e0f28a51b4a3f73e6bedd9);
-            
-        
-
-        marker_8f2283dfe8e9dc5ff4bd8cdf814a4c6d.bindPopup(popup_9a8c53a11988127e317e75703481a054)
-        ;
-
-        
-    
-    
-            marker_8f2283dfe8e9dc5ff4bd8cdf814a4c6d.bindTooltip(
-                `<div>
-                     WOK – World of Kitchen
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_cbc72d0d92b15ccec9de07ec71572e48 = L.marker(
+            var marker_53e792ab9d465abce2c84578ebe6290a = L.marker(
                 [52.383027777, 9.745444444],
                 {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
+            ).addTo(map_fa20dd90c08ed0b5a386e7d6d4c57f61);
         
     
-        var popup_f1bc60bf750086df71422755507d4683 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_04c9870265543ec5d644d6d785052b64 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_0d2d9209247c1ca21e8c5d6bfa8b10a9 = $(`<div id=&quot;html_0d2d9209247c1ca21e8c5d6bfa8b10a9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q376573' target='_blank'>Schwullesbisches Archiv Hannover</a></h3>         Mitte</div>`)[0];
-                popup_f1bc60bf750086df71422755507d4683.setContent(html_0d2d9209247c1ca21e8c5d6bfa8b10a9);
+                var html_046c05cda1c578f313f902ac814779ad = $(`<div id=&quot;html_046c05cda1c578f313f902ac814779ad&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q376573' target='_blank'>Schwullesbisches Archiv Hannover</a></h3>         </div>`)[0];
+                popup_04c9870265543ec5d644d6d785052b64.setContent(html_046c05cda1c578f313f902ac814779ad);
             
         
 
-        marker_cbc72d0d92b15ccec9de07ec71572e48.bindPopup(popup_f1bc60bf750086df71422755507d4683)
+        marker_53e792ab9d465abce2c84578ebe6290a.bindPopup(popup_04c9870265543ec5d644d6d785052b64)
         ;
 
         
     
     
-            marker_cbc72d0d92b15ccec9de07ec71572e48.bindTooltip(
+            marker_53e792ab9d465abce2c84578ebe6290a.bindTooltip(
                 `<div>
                      Schwullesbisches Archiv Hannover
                  </div>`,
@@ -509,1043 +241,86 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_24d31ee508fb20dad7a347bd8425b4da = L.marker(
-                [52.36885, 9.76508],
+            var marker_89ff99f7ccbf53c2e4c8e86248d9d4e6 = L.marker(
+                [52.337562, 9.790149],
                 {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
+            ).addTo(map_fa20dd90c08ed0b5a386e7d6d4c57f61);
         
     
-        var popup_9521ddd4afcf5dcfd5846f1ba6f3c3ee = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_618ea0eb5059a38f8f6188913efa6d0a = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_f34266ffae55fac69dc92737e7e205d3 = $(`<div id=&quot;html_f34266ffae55fac69dc92737e7e205d3&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q28939753' target='_blank'>Veterinärmedizinhistorisches Museum der Tierärztlichen Hochschule Hannover</a></h3>         Südstadt-Bult</div>`)[0];
-                popup_9521ddd4afcf5dcfd5846f1ba6f3c3ee.setContent(html_f34266ffae55fac69dc92737e7e205d3);
+                var html_4ee06725f47f5a77e93bac1c62eaee88 = $(`<div id=&quot;html_4ee06725f47f5a77e93bac1c62eaee88&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q17353569' target='_blank'>Friedhofsmuseum Hannover</a></h3>         </div>`)[0];
+                popup_618ea0eb5059a38f8f6188913efa6d0a.setContent(html_4ee06725f47f5a77e93bac1c62eaee88);
             
         
 
-        marker_24d31ee508fb20dad7a347bd8425b4da.bindPopup(popup_9521ddd4afcf5dcfd5846f1ba6f3c3ee)
+        marker_89ff99f7ccbf53c2e4c8e86248d9d4e6.bindPopup(popup_618ea0eb5059a38f8f6188913efa6d0a)
         ;
 
         
     
     
-            marker_24d31ee508fb20dad7a347bd8425b4da.bindTooltip(
+            marker_89ff99f7ccbf53c2e4c8e86248d9d4e6.bindTooltip(
                 `<div>
-                     Veterinärmedizinhistorisches Museum der Tierärztlichen Hochschule Hannover
+                     Friedhofsmuseum Hannover
                  </div>`,
                 {&quot;sticky&quot;: true}
             );
         
     
-            var marker_db58667f5d6c49b9e92e779f0e0a0a3e = L.marker(
-                [52.37705, 9.75855],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_3d88388f642ae84137fec94412b6d1e4 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_d922a8afb1bfacf3657e31c5d802eef2 = $(`<div id=&quot;html_d922a8afb1bfacf3657e31c5d802eef2&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q28739553' target='_blank'>Forschungszentrum Musik und Gender, Bibliothek</a></h3>         Mitte</div>`)[0];
-                popup_3d88388f642ae84137fec94412b6d1e4.setContent(html_d922a8afb1bfacf3657e31c5d802eef2);
-            
-        
-
-        marker_db58667f5d6c49b9e92e779f0e0a0a3e.bindPopup(popup_3d88388f642ae84137fec94412b6d1e4)
-        ;
-
-        
-    
-    
-            marker_db58667f5d6c49b9e92e779f0e0a0a3e.bindTooltip(
-                `<div>
-                     Forschungszentrum Musik und Gender, Bibliothek
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_878c9ac56294c56709c8ddb7e9242b18 = L.marker(
-                [52.37595, 9.75388],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_cad1cc29ebd8db6edf2a0d198c29114f = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_d1b1b31372ab8ff2e0074a416c826131 = $(`<div id=&quot;html_d1b1b31372ab8ff2e0074a416c826131&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q28739593' target='_blank'>Niedersächsisches Landesamt für Denkmalpflege, Bibliothek</a></h3>         Mitte</div>`)[0];
-                popup_cad1cc29ebd8db6edf2a0d198c29114f.setContent(html_d1b1b31372ab8ff2e0074a416c826131);
-            
-        
-
-        marker_878c9ac56294c56709c8ddb7e9242b18.bindPopup(popup_cad1cc29ebd8db6edf2a0d198c29114f)
-        ;
-
-        
-    
-    
-            marker_878c9ac56294c56709c8ddb7e9242b18.bindTooltip(
-                `<div>
-                     Niedersächsisches Landesamt für Denkmalpflege, Bibliothek
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_7478490a113880ebc92c3ae7f8addb1e = L.marker(
-                [52.364404, 9.763675],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_fcfd6c512e973239e20482f92e4e9d85 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_6a214e31eff274a81972fc5f21aff46e = $(`<div id=&quot;html_6a214e31eff274a81972fc5f21aff46e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q122228166' target='_blank'>Hi-Score</a></h3>         Hannover</div>`)[0];
-                popup_fcfd6c512e973239e20482f92e4e9d85.setContent(html_6a214e31eff274a81972fc5f21aff46e);
-            
-        
-
-        marker_7478490a113880ebc92c3ae7f8addb1e.bindPopup(popup_fcfd6c512e973239e20482f92e4e9d85)
-        ;
-
-        
-    
-    
-            marker_7478490a113880ebc92c3ae7f8addb1e.bindTooltip(
-                `<div>
-                     Hi-Score
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_cdea22ce3293089020f1caa2fed83e30 = L.marker(
-                [52.3703133, 9.7456624],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_1c8342d48714cfbc2755430d1619dd21 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_30fff576849c57d0a76c64187d6d061f = $(`<div id=&quot;html_30fff576849c57d0a76c64187d6d061f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q130988041' target='_blank'>Archiv der VGH Versicherungen</a></h3>         Hannover</div>`)[0];
-                popup_1c8342d48714cfbc2755430d1619dd21.setContent(html_30fff576849c57d0a76c64187d6d061f);
-            
-        
-
-        marker_cdea22ce3293089020f1caa2fed83e30.bindPopup(popup_1c8342d48714cfbc2755430d1619dd21)
-        ;
-
-        
-    
-    
-            marker_cdea22ce3293089020f1caa2fed83e30.bindTooltip(
-                `<div>
-                     Archiv der VGH Versicherungen
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_b04c022a987417e87d1770348e43321e = L.marker(
-                [52.3721, 9.73422],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_e21803d2da20458c23b5d6b39afd8b98 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_a4c44dce48ea9dd1af708036ee98ceda = $(`<div id=&quot;html_a4c44dce48ea9dd1af708036ee98ceda&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q28738636' target='_blank'>Niedersächsisches Ministerium für Soziales, Gesundheit und Gleichstellung, Bibliothek</a></h3>         Mitte</div>`)[0];
-                popup_e21803d2da20458c23b5d6b39afd8b98.setContent(html_a4c44dce48ea9dd1af708036ee98ceda);
-            
-        
-
-        marker_b04c022a987417e87d1770348e43321e.bindPopup(popup_e21803d2da20458c23b5d6b39afd8b98)
-        ;
-
-        
-    
-    
-            marker_b04c022a987417e87d1770348e43321e.bindTooltip(
-                `<div>
-                     Niedersächsisches Ministerium für Soziales, Gesundheit und Gleichstellung, Bibliothek
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_2fc425bec7aebca44ffb799b6bfe677a = L.marker(
-                [52.371303, 9.732351],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_4d157f39bc27db089ec3d2254113b116 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_da432422f21007e3de581970c982a349 = $(`<div id=&quot;html_da432422f21007e3de581970c982a349&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q76636151' target='_blank'>Leibniz-Ausstellung im Leibnizhaus</a></h3>         Hannover</div>`)[0];
-                popup_4d157f39bc27db089ec3d2254113b116.setContent(html_da432422f21007e3de581970c982a349);
-            
-        
-
-        marker_2fc425bec7aebca44ffb799b6bfe677a.bindPopup(popup_4d157f39bc27db089ec3d2254113b116)
-        ;
-
-        
-    
-    
-            marker_2fc425bec7aebca44ffb799b6bfe677a.bindTooltip(
-                `<div>
-                     Leibniz-Ausstellung im Leibnizhaus
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_6b1dd32536937c3db8988b9b1dde095f = L.marker(
-                [52.36518, 9.74152],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_004d47f6e21a2bcc91b1cea0c6932c4b = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_c63ed47c99c54c0a2bf55261af859207 = $(`<div id=&quot;html_c63ed47c99c54c0a2bf55261af859207&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q28738626' target='_blank'>Niedersächsische Staatskanzlei, Bibliothek</a></h3>         Mitte</div>`)[0];
-                popup_004d47f6e21a2bcc91b1cea0c6932c4b.setContent(html_c63ed47c99c54c0a2bf55261af859207);
-            
-        
-
-        marker_6b1dd32536937c3db8988b9b1dde095f.bindPopup(popup_004d47f6e21a2bcc91b1cea0c6932c4b)
-        ;
-
-        
-    
-    
-            marker_6b1dd32536937c3db8988b9b1dde095f.bindTooltip(
-                `<div>
-                     Niedersächsische Staatskanzlei, Bibliothek
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_1aad6353aa5b15f159956b54c72f9137 = L.marker(
-                [52.36546, 9.74042],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_aeaa8398880482ec88d010d111efcf8c = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_a9150b8bf338d946a6cec3a8e26e9613 = $(`<div id=&quot;html_a9150b8bf338d946a6cec3a8e26e9613&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q28737668' target='_blank'>Niedersächsische Landesgalerie, Bibliothek</a></h3>         Mitte</div>`)[0];
-                popup_aeaa8398880482ec88d010d111efcf8c.setContent(html_a9150b8bf338d946a6cec3a8e26e9613);
-            
-        
-
-        marker_1aad6353aa5b15f159956b54c72f9137.bindPopup(popup_aeaa8398880482ec88d010d111efcf8c)
-        ;
-
-        
-    
-    
-            marker_1aad6353aa5b15f159956b54c72f9137.bindTooltip(
-                `<div>
-                     Niedersächsische Landesgalerie, Bibliothek
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_643b5a31d3e56b5571502c72faa4cf7d = L.marker(
+            var marker_f6e3f933198d71d3ad4360e39b32744b = L.marker(
                 [52.36549544, 9.740111115],
                 {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
+            ).addTo(map_fa20dd90c08ed0b5a386e7d6d4c57f61);
         
     
-        var popup_a7191e9c26722c5298468be8a39a5b83 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_55148ea3386f06f6070435cc2136d030 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_d39bd700fb7f70654cb992f7175b1846 = $(`<div id=&quot;html_d39bd700fb7f70654cb992f7175b1846&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q314082' target='_blank'>Niedersächsisches Landesmuseum Hannover</a></h3>         Südstadt-Bult</div>`)[0];
-                popup_a7191e9c26722c5298468be8a39a5b83.setContent(html_d39bd700fb7f70654cb992f7175b1846);
+                var html_ce2b57d2c58af80bef26a4911a62490c = $(`<div id=&quot;html_ce2b57d2c58af80bef26a4911a62490c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q314082' target='_blank'>Landesmuseum Hannover</a></h3>         </div>`)[0];
+                popup_55148ea3386f06f6070435cc2136d030.setContent(html_ce2b57d2c58af80bef26a4911a62490c);
             
         
 
-        marker_643b5a31d3e56b5571502c72faa4cf7d.bindPopup(popup_a7191e9c26722c5298468be8a39a5b83)
+        marker_f6e3f933198d71d3ad4360e39b32744b.bindPopup(popup_55148ea3386f06f6070435cc2136d030)
         ;
 
         
     
     
-            marker_643b5a31d3e56b5571502c72faa4cf7d.bindTooltip(
+            marker_f6e3f933198d71d3ad4360e39b32744b.bindTooltip(
                 `<div>
-                     Niedersächsisches Landesmuseum Hannover
+                     Landesmuseum Hannover
                  </div>`,
                 {&quot;sticky&quot;: true}
             );
         
     
-            var marker_5027e04388f1a7f9f06c65dae3bf2b89 = L.marker(
-                [52.3692, 9.73838],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_441d49cb39662afce2c01d58fc8f5366 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_d1181b66e3c31d7da43ee03b7518b49a = $(`<div id=&quot;html_d1181b66e3c31d7da43ee03b7518b49a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q2359938' target='_blank'>Städtische Galerie KUBUS</a></h3>         Mitte</div>`)[0];
-                popup_441d49cb39662afce2c01d58fc8f5366.setContent(html_d1181b66e3c31d7da43ee03b7518b49a);
-            
-        
-
-        marker_5027e04388f1a7f9f06c65dae3bf2b89.bindPopup(popup_441d49cb39662afce2c01d58fc8f5366)
-        ;
-
-        
-    
-    
-            marker_5027e04388f1a7f9f06c65dae3bf2b89.bindTooltip(
-                `<div>
-                     Städtische Galerie KUBUS
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_08b05e51b743818006df42b3d1951a30 = L.marker(
-                [52.36525, 9.73115],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_b4d871f6a7d9be1d0417682934dd90db = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_2d2f66fb7336d57c9b4efd8cfa2532b0 = $(`<div id=&quot;html_2d2f66fb7336d57c9b4efd8cfa2532b0&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q1539517' target='_blank'>Gottfried Wilhelm Leibniz Bibliothek</a></h3>         Hannover</div>`)[0];
-                popup_b4d871f6a7d9be1d0417682934dd90db.setContent(html_2d2f66fb7336d57c9b4efd8cfa2532b0);
-            
-        
-
-        marker_08b05e51b743818006df42b3d1951a30.bindPopup(popup_b4d871f6a7d9be1d0417682934dd90db)
-        ;
-
-        
-    
-    
-            marker_08b05e51b743818006df42b3d1951a30.bindTooltip(
-                `<div>
-                     Gottfried Wilhelm Leibniz Bibliothek
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_dbe46c36f295e5dd5cd26dbfd2030ece = L.marker(
-                [52.3653, 9.73083],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_d2338d7e11819d7c0cc08d42c99697bf = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_8e6fb1de71e982ff9e240fa04cd925fd = $(`<div id=&quot;html_8e6fb1de71e982ff9e240fa04cd925fd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q1539517' target='_blank'>Gottfried Wilhelm Leibniz Bibliothek</a></h3>         Hannover</div>`)[0];
-                popup_d2338d7e11819d7c0cc08d42c99697bf.setContent(html_8e6fb1de71e982ff9e240fa04cd925fd);
-            
-        
-
-        marker_dbe46c36f295e5dd5cd26dbfd2030ece.bindPopup(popup_d2338d7e11819d7c0cc08d42c99697bf)
-        ;
-
-        
-    
-    
-            marker_dbe46c36f295e5dd5cd26dbfd2030ece.bindTooltip(
-                `<div>
-                     Gottfried Wilhelm Leibniz Bibliothek
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_12472553e37d8fd7bcde76eaf3f65ec0 = L.marker(
-                [52.35529, 9.74944],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_9e1b033d1b3cf8685fae66a9af94e75e = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_8974af2c1dd9f2d4647e996e135fb4a1 = $(`<div id=&quot;html_8974af2c1dd9f2d4647e996e135fb4a1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q28738635' target='_blank'>Regionaldirektion Niedersachsen-Bremen der Bundesagentur für Arbeit, Bibliothek</a></h3>         Südstadt-Bult</div>`)[0];
-                popup_9e1b033d1b3cf8685fae66a9af94e75e.setContent(html_8974af2c1dd9f2d4647e996e135fb4a1);
-            
-        
-
-        marker_12472553e37d8fd7bcde76eaf3f65ec0.bindPopup(popup_9e1b033d1b3cf8685fae66a9af94e75e)
-        ;
-
-        
-    
-    
-            marker_12472553e37d8fd7bcde76eaf3f65ec0.bindTooltip(
-                `<div>
-                     Regionaldirektion Niedersachsen-Bremen der Bundesagentur für Arbeit, Bibliothek
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_cebc8f3fdbeb81937b22101a25f40b9f = L.marker(
-                [52.3894, 9.7225],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_3e7a557b89bede15e93d3230043c1aad = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_7faaac3fe4a6873d943fa5f6b32a7f2e = $(`<div id=&quot;html_7faaac3fe4a6873d943fa5f6b32a7f2e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q1672378' target='_blank'>Iranische Bibliothek in Hannover</a></h3>         Nord</div>`)[0];
-                popup_3e7a557b89bede15e93d3230043c1aad.setContent(html_7faaac3fe4a6873d943fa5f6b32a7f2e);
-            
-        
-
-        marker_cebc8f3fdbeb81937b22101a25f40b9f.bindPopup(popup_3e7a557b89bede15e93d3230043c1aad)
-        ;
-
-        
-    
-    
-            marker_cebc8f3fdbeb81937b22101a25f40b9f.bindTooltip(
-                `<div>
-                     Iranische Bibliothek in Hannover
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_7963e0b4ed2061cfd2d58652fa7fe87a = L.marker(
-                [52.386746658, 9.719721581],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_011c0e52bc780a72991196aaa3147b40 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_b088ebcc995c41eac6c4edb4b45af048 = $(`<div id=&quot;html_b088ebcc995c41eac6c4edb4b45af048&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q131862526' target='_blank'>Galerei bei Koc</a></h3>         Nord</div>`)[0];
-                popup_011c0e52bc780a72991196aaa3147b40.setContent(html_b088ebcc995c41eac6c4edb4b45af048);
-            
-        
-
-        marker_7963e0b4ed2061cfd2d58652fa7fe87a.bindPopup(popup_011c0e52bc780a72991196aaa3147b40)
-        ;
-
-        
-    
-    
-            marker_7963e0b4ed2061cfd2d58652fa7fe87a.bindTooltip(
-                `<div>
-                     Galerei bei Koc
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_dca2b821c7d86fa73d9883a800f43e08 = L.marker(
-                [52.39121, 9.69775],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_868bea565d791c27855c4e17979e232d = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_dc9efa4c975b20b79f65a71fb46a7f5d = $(`<div id=&quot;html_dc9efa4c975b20b79f65a71fb46a7f5d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q127967659' target='_blank'>Museum Schloss Herrenhausen</a></h3>         Hannover</div>`)[0];
-                popup_868bea565d791c27855c4e17979e232d.setContent(html_dc9efa4c975b20b79f65a71fb46a7f5d);
-            
-        
-
-        marker_dca2b821c7d86fa73d9883a800f43e08.bindPopup(popup_868bea565d791c27855c4e17979e232d)
-        ;
-
-        
-    
-    
-            marker_dca2b821c7d86fa73d9883a800f43e08.bindTooltip(
-                `<div>
-                     Museum Schloss Herrenhausen
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_1a3d2c7f358e9ee812fdaaa817b868c9 = L.marker(
-                [52.39088, 9.69983],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_dc26ae2745434444b4308d600a6b065f = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_c0fe3f4477eff00c6e83c6f8ba111ac5 = $(`<div id=&quot;html_c0fe3f4477eff00c6e83c6f8ba111ac5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q98809154' target='_blank'>Galeriegebäude Herrenhausen</a></h3>         Herrenhausen-Stöcken</div>`)[0];
-                popup_dc26ae2745434444b4308d600a6b065f.setContent(html_c0fe3f4477eff00c6e83c6f8ba111ac5);
-            
-        
-
-        marker_1a3d2c7f358e9ee812fdaaa817b868c9.bindPopup(popup_dc26ae2745434444b4308d600a6b065f)
-        ;
-
-        
-    
-    
-            marker_1a3d2c7f358e9ee812fdaaa817b868c9.bindTooltip(
-                `<div>
-                     Galeriegebäude Herrenhausen
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_1aab5ab58f99ac2e9f9dee1091002bfc = L.marker(
-                [52.39323, 9.69217],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_43751fd1141684cc25b65f983da51370 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_c248427fcfe6c62c648eeb911935d20c = $(`<div id=&quot;html_c248427fcfe6c62c648eeb911935d20c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q28738639' target='_blank'>Evangelische Kirche in Deutschland, Kirchenamt, Bibliothek</a></h3>         Herrenhausen-Stöcken</div>`)[0];
-                popup_43751fd1141684cc25b65f983da51370.setContent(html_c248427fcfe6c62c648eeb911935d20c);
-            
-        
-
-        marker_1aab5ab58f99ac2e9f9dee1091002bfc.bindPopup(popup_43751fd1141684cc25b65f983da51370)
-        ;
-
-        
-    
-    
-            marker_1aab5ab58f99ac2e9f9dee1091002bfc.bindTooltip(
-                `<div>
-                     Evangelische Kirche in Deutschland, Kirchenamt, Bibliothek
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_16f2241b5d76063e538a9bed82e03d97 = L.marker(
-                [52.389, 9.66672],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_d272b32354d40fc49370edc31c8bc83b = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_8d88eafda378ca82121f421605f7cefe = $(`<div id=&quot;html_8d88eafda378ca82121f421605f7cefe&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q124707819' target='_blank'>Rosebusch Verlassenschaften</a></h3>         Hannover</div>`)[0];
-                popup_d272b32354d40fc49370edc31c8bc83b.setContent(html_8d88eafda378ca82121f421605f7cefe);
-            
-        
-
-        marker_16f2241b5d76063e538a9bed82e03d97.bindPopup(popup_d272b32354d40fc49370edc31c8bc83b)
-        ;
-
-        
-    
-    
-            marker_16f2241b5d76063e538a9bed82e03d97.bindTooltip(
-                `<div>
-                     Rosebusch Verlassenschaften
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_a5d328554013c02318048a3846a77272 = L.marker(
-                [52.37601, 9.72684],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_6955264606087e716bf3ab7e0b6b7830 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_7c0b00ccb08c628871129f657e40aab5 = $(`<div id=&quot;html_7c0b00ccb08c628871129f657e40aab5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q22692203' target='_blank'>Handels- und Industriemuseum</a></h3>         Mitte</div>`)[0];
-                popup_6955264606087e716bf3ab7e0b6b7830.setContent(html_7c0b00ccb08c628871129f657e40aab5);
-            
-        
-
-        marker_a5d328554013c02318048a3846a77272.bindPopup(popup_6955264606087e716bf3ab7e0b6b7830)
-        ;
-
-        
-    
-    
-            marker_a5d328554013c02318048a3846a77272.bindTooltip(
-                `<div>
-                     Handels- und Industriemuseum
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_ad77e24531ce5bec9492f541becf8f61 = L.marker(
-                [52.3736, 9.72735],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_39f9cef186dd70c84bbe12342ee6dcd4 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_06b8927f6b2761479e0a5a89729932f6 = $(`<div id=&quot;html_06b8927f6b2761479e0a5a89729932f6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q1802291' target='_blank'>Landeskirchliches Archiv Hannover</a></h3>         Mitte</div>`)[0];
-                popup_39f9cef186dd70c84bbe12342ee6dcd4.setContent(html_06b8927f6b2761479e0a5a89729932f6);
-            
-        
-
-        marker_ad77e24531ce5bec9492f541becf8f61.bindPopup(popup_39f9cef186dd70c84bbe12342ee6dcd4)
-        ;
-
-        
-    
-    
-            marker_ad77e24531ce5bec9492f541becf8f61.bindTooltip(
-                `<div>
-                     Landeskirchliches Archiv Hannover
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_a28b440ff77152a080616a333cbc8cf0 = L.marker(
-                [52.37133, 9.7296],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_62361e760f086e86b0443d97f438120a = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_84fd6611b3cc20aa8fa44dacc1168606 = $(`<div id=&quot;html_84fd6611b3cc20aa8fa44dacc1168606&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q28738638' target='_blank'>Niedersächsisches Ministerium für Ernährung, Landwirtschaft und Verbraucherschutz, Informations- und Bibliotheksdienste</a></h3>         Mitte</div>`)[0];
-                popup_62361e760f086e86b0443d97f438120a.setContent(html_84fd6611b3cc20aa8fa44dacc1168606);
-            
-        
-
-        marker_a28b440ff77152a080616a333cbc8cf0.bindPopup(popup_62361e760f086e86b0443d97f438120a)
-        ;
-
-        
-    
-    
-            marker_a28b440ff77152a080616a333cbc8cf0.bindTooltip(
-                `<div>
-                     Niedersächsisches Ministerium für Ernährung, Landwirtschaft und Verbraucherschutz, Informations- und Bibliotheksdienste
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_6db0475d45313e83e29d972f568304f7 = L.marker(
-                [52.371577, 9.728828],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_b7025295a88558d828df3bb04759a866 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_d65489289d8b914384738c76072ef38b = $(`<div id=&quot;html_d65489289d8b914384738c76072ef38b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q856518' target='_blank'>Bibliothek des Landeskirchenamtes der Evangelisch-lutherischen Landeskirche Hannovers</a></h3>         Hannover</div>`)[0];
-                popup_b7025295a88558d828df3bb04759a866.setContent(html_d65489289d8b914384738c76072ef38b);
-            
-        
-
-        marker_6db0475d45313e83e29d972f568304f7.bindPopup(popup_b7025295a88558d828df3bb04759a866)
-        ;
-
-        
-    
-    
-            marker_6db0475d45313e83e29d972f568304f7.bindTooltip(
-                `<div>
-                     Bibliothek des Landeskirchenamtes der Evangelisch-lutherischen Landeskirche Hannovers
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_08b2ae3ecfe5ac7950a0b6241834d4d2 = L.marker(
-                [52.37112, 9.72971],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_fb7a84a499e6a907a6de3cebaff0c0ad = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_ac938a46066705dee2b129cc95734ce0 = $(`<div id=&quot;html_ac938a46066705dee2b129cc95734ce0&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q28734916' target='_blank'>Arbeitsgemeinschaft Niedersächsischer Behördenbibliotheken</a></h3>         Mitte</div>`)[0];
-                popup_fb7a84a499e6a907a6de3cebaff0c0ad.setContent(html_ac938a46066705dee2b129cc95734ce0);
-            
-        
-
-        marker_08b2ae3ecfe5ac7950a0b6241834d4d2.bindPopup(popup_fb7a84a499e6a907a6de3cebaff0c0ad)
-        ;
-
-        
-    
-    
-            marker_08b2ae3ecfe5ac7950a0b6241834d4d2.bindTooltip(
-                `<div>
-                     Arbeitsgemeinschaft Niedersächsischer Behördenbibliotheken
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_ea55ed90084d5a21be5e2fce60552c78 = L.marker(
-                [52.369694444, 9.730611111],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_8155b7857bae351aca59fcdc97d6fcb8 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_079686aa675b03c3d00d59218caf9973 = $(`<div id=&quot;html_079686aa675b03c3d00d59218caf9973&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q33099725' target='_blank'>Niedersächsisches Landesarchiv, Standort Hannover, Dienstbibliothek</a></h3>         Mitte</div>`)[0];
-                popup_8155b7857bae351aca59fcdc97d6fcb8.setContent(html_079686aa675b03c3d00d59218caf9973);
-            
-        
-
-        marker_ea55ed90084d5a21be5e2fce60552c78.bindPopup(popup_8155b7857bae351aca59fcdc97d6fcb8)
-        ;
-
-        
-    
-    
-            marker_ea55ed90084d5a21be5e2fce60552c78.bindTooltip(
-                `<div>
-                     Niedersächsisches Landesarchiv, Standort Hannover, Dienstbibliothek
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_7ffd6bf72562ffe836f69ea9092013cc = L.marker(
-                [52.36964, 9.73041],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_a028592115bb56fd5425d2133cc7b611 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_cd692ce27c0ee92a5e3008b2a132a512 = $(`<div id=&quot;html_cd692ce27c0ee92a5e3008b2a132a512&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q28738624' target='_blank'>Historischer Verein für Niedersachsen, Bibliothek</a></h3>         Mitte</div>`)[0];
-                popup_a028592115bb56fd5425d2133cc7b611.setContent(html_cd692ce27c0ee92a5e3008b2a132a512);
-            
-        
-
-        marker_7ffd6bf72562ffe836f69ea9092013cc.bindPopup(popup_a028592115bb56fd5425d2133cc7b611)
-        ;
-
-        
-    
-    
-            marker_7ffd6bf72562ffe836f69ea9092013cc.bindTooltip(
-                `<div>
-                     Historischer Verein für Niedersachsen, Bibliothek
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_55d167b3fcbd6a26cdcdd88e542c6cdf = L.marker(
-                [52.3687, 9.72858],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_6ab9b7b648ee74165f9bfd59fb520b6d = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_9c9f8a412806d402e36294a5a05d9c6e = $(`<div id=&quot;html_9c9f8a412806d402e36294a5a05d9c6e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q28738634' target='_blank'>Niedersächsisches Ministerium für Inneres und Sport, Bibliothek</a></h3>         Mitte</div>`)[0];
-                popup_6ab9b7b648ee74165f9bfd59fb520b6d.setContent(html_9c9f8a412806d402e36294a5a05d9c6e);
-            
-        
-
-        marker_55d167b3fcbd6a26cdcdd88e542c6cdf.bindPopup(popup_6ab9b7b648ee74165f9bfd59fb520b6d)
-        ;
-
-        
-    
-    
-            marker_55d167b3fcbd6a26cdcdd88e542c6cdf.bindTooltip(
-                `<div>
-                     Niedersächsisches Ministerium für Inneres und Sport, Bibliothek
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_84cadd1f5da390f92bd80a2500b74b1e = L.marker(
-                [52.36727, 9.73025],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_a91a4e6cd81344bc367651b3168a38c9 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_7d7db2898220309bf9776b9ca992a660 = $(`<div id=&quot;html_7d7db2898220309bf9776b9ca992a660&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q28733634' target='_blank'>Bibliothek des Niedersächsischen Justizministeriums</a></h3>         Mitte</div>`)[0];
-                popup_a91a4e6cd81344bc367651b3168a38c9.setContent(html_7d7db2898220309bf9776b9ca992a660);
-            
-        
-
-        marker_84cadd1f5da390f92bd80a2500b74b1e.bindPopup(popup_a91a4e6cd81344bc367651b3168a38c9)
-        ;
-
-        
-    
-    
-            marker_84cadd1f5da390f92bd80a2500b74b1e.bindTooltip(
-                `<div>
-                     Bibliothek des Niedersächsischen Justizministeriums
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_c9279a9303f196616fb636e86d003b29 = L.marker(
-                [52.369166666, 9.722777777],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_c7df629884e70872516a7c473063e4e2 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_b5da3fdd4a2e4994113aba8105d019fd = $(`<div id=&quot;html_b5da3fdd4a2e4994113aba8105d019fd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q40387600' target='_blank'>Museum für Energiegeschichte(n)</a></h3>         Mitte</div>`)[0];
-                popup_c7df629884e70872516a7c473063e4e2.setContent(html_b5da3fdd4a2e4994113aba8105d019fd);
-            
-        
-
-        marker_c9279a9303f196616fb636e86d003b29.bindPopup(popup_c7df629884e70872516a7c473063e4e2)
-        ;
-
-        
-    
-    
-            marker_c9279a9303f196616fb636e86d003b29.bindTooltip(
-                `<div>
-                     Museum für Energiegeschichte(n)
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_cc1ffea4b326afbc0b780301caa701c0 = L.marker(
-                [52.36653832, 9.716278733],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_f0e49f93cbf81651ddc7eab7899b8c5d = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_c4c19c86c8f047992364d204829b9dc8 = $(`<div id=&quot;html_c4c19c86c8f047992364d204829b9dc8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q131731708' target='_blank'>Falkenberg Galerie für Neue Kunst</a></h3>         Linden-Limmer</div>`)[0];
-                popup_f0e49f93cbf81651ddc7eab7899b8c5d.setContent(html_c4c19c86c8f047992364d204829b9dc8);
-            
-        
-
-        marker_cc1ffea4b326afbc0b780301caa701c0.bindPopup(popup_f0e49f93cbf81651ddc7eab7899b8c5d)
-        ;
-
-        
-    
-    
-            marker_cc1ffea4b326afbc0b780301caa701c0.bindTooltip(
-                `<div>
-                     Falkenberg Galerie für Neue Kunst
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_30afd948331ccc923155a1e2345af3f6 = L.marker(
-                [52.36274, 9.72144],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_6665f8d40ea65c8b78194fde01bbaf04 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_40aa6a17803ade3b0ec1c84940ccd736 = $(`<div id=&quot;html_40aa6a17803ade3b0ec1c84940ccd736&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q28738577' target='_blank'>Oberfinanzdirektion Niedersachsen, Landesweite Bezüge- und Versorgungsstelle (LBV), Bibliothek</a></h3>         Linden-Limmer</div>`)[0];
-                popup_6665f8d40ea65c8b78194fde01bbaf04.setContent(html_40aa6a17803ade3b0ec1c84940ccd736);
-            
-        
-
-        marker_30afd948331ccc923155a1e2345af3f6.bindPopup(popup_6665f8d40ea65c8b78194fde01bbaf04)
-        ;
-
-        
-    
-    
-            marker_30afd948331ccc923155a1e2345af3f6.bindTooltip(
-                `<div>
-                     Oberfinanzdirektion Niedersachsen, Landesweite Bezüge- und Versorgungsstelle (LBV), Bibliothek
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_18bd8870e7886168a561ee76f11048f0 = L.marker(
-                [52.373014, 9.707684],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_30e8cf8db02cc71c3c3a9c7fe3b5d745 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_8a393906c4c1f027c093dd03611d7f98 = $(`<div id=&quot;html_8a393906c4c1f027c093dd03611d7f98&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q15108126' target='_blank'>Buchdruck-Museum</a></h3>         Linden-Limmer</div>`)[0];
-                popup_30e8cf8db02cc71c3c3a9c7fe3b5d745.setContent(html_8a393906c4c1f027c093dd03611d7f98);
-            
-        
-
-        marker_18bd8870e7886168a561ee76f11048f0.bindPopup(popup_30e8cf8db02cc71c3c3a9c7fe3b5d745)
-        ;
-
-        
-    
-    
-            marker_18bd8870e7886168a561ee76f11048f0.bindTooltip(
-                `<div>
-                     Buchdruck-Museum
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_b1419eb361c8ecdd7f68cd7673432fba = L.marker(
-                [52.36527, 9.70618],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_b7cf0f5ed5194ed0953027ef6e90b44d = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_69468af6a56f72393c93a7958ff26e81 = $(`<div id=&quot;html_69468af6a56f72393c93a7958ff26e81&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q124433237' target='_blank'>Kindermuseum Zinnober</a></h3>         Hannover</div>`)[0];
-                popup_b7cf0f5ed5194ed0953027ef6e90b44d.setContent(html_69468af6a56f72393c93a7958ff26e81);
-            
-        
-
-        marker_b1419eb361c8ecdd7f68cd7673432fba.bindPopup(popup_b7cf0f5ed5194ed0953027ef6e90b44d)
-        ;
-
-        
-    
-    
-            marker_b1419eb361c8ecdd7f68cd7673432fba.bindTooltip(
-                `<div>
-                     Kindermuseum Zinnober
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_127aa2f524ea61798bf130d5b83e089d = L.marker(
-                [52.35375, 9.72266],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_8f814fd06e55ebd3fd809cf3f5c72dd2 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_54e83b6b4b39cc9ab5fd189fbb0acc9b = $(`<div id=&quot;html_54e83b6b4b39cc9ab5fd189fbb0acc9b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q130548561' target='_blank'>Bibliothek der Hochschule Hannover, Zentralbibliothek</a></h3>         </div>`)[0];
-                popup_8f814fd06e55ebd3fd809cf3f5c72dd2.setContent(html_54e83b6b4b39cc9ab5fd189fbb0acc9b);
-            
-        
-
-        marker_127aa2f524ea61798bf130d5b83e089d.bindPopup(popup_8f814fd06e55ebd3fd809cf3f5c72dd2)
-        ;
-
-        
-    
-    
-            marker_127aa2f524ea61798bf130d5b83e089d.bindTooltip(
-                `<div>
-                     Bibliothek der Hochschule Hannover, Zentralbibliothek
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
-    
-            var marker_227c0b4a85d60f52f340f5697f906f50 = L.marker(
+            var marker_1a65541025438a50adaa593e437ab40e = L.marker(
                 [52.37769, 9.67258],
                 {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
+            ).addTo(map_fa20dd90c08ed0b5a386e7d6d4c57f61);
         
     
-        var popup_2e8e39e9060d307fb60c22adc6945459 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_ad897cc0de7ac304f4d33bd15ed58c50 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_2f9e489a9514ad09d07126f16a5c1f9e = $(`<div id=&quot;html_2f9e489a9514ad09d07126f16a5c1f9e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q76636143' target='_blank'>Gedenkstätte Ahlem</a></h3>         Ahlem-Badenstedt-Davenstedt</div>`)[0];
-                popup_2e8e39e9060d307fb60c22adc6945459.setContent(html_2f9e489a9514ad09d07126f16a5c1f9e);
+                var html_2ae63bf0ae41fa5f66df7aed4f594d7f = $(`<div id=&quot;html_2ae63bf0ae41fa5f66df7aed4f594d7f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q76636143' target='_blank'>Gedenkstätte Ahlem</a></h3>         </div>`)[0];
+                popup_ad897cc0de7ac304f4d33bd15ed58c50.setContent(html_2ae63bf0ae41fa5f66df7aed4f594d7f);
             
         
 
-        marker_227c0b4a85d60f52f340f5697f906f50.bindPopup(popup_2e8e39e9060d307fb60c22adc6945459)
+        marker_1a65541025438a50adaa593e437ab40e.bindPopup(popup_ad897cc0de7ac304f4d33bd15ed58c50)
         ;
 
         
     
     
-            marker_227c0b4a85d60f52f340f5697f906f50.bindTooltip(
+            marker_1a65541025438a50adaa593e437ab40e.bindTooltip(
                 `<div>
                      Gedenkstätte Ahlem
                  </div>`,
@@ -1553,28 +328,173 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_28b8e53bfb5de3604dc5b1de4dea8d76 = L.marker(
-                [52.326549, 9.850824],
+            var marker_ce2610877bfff3ddd637ddff34486301 = L.marker(
+                [52.373014, 9.707684],
                 {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
+            ).addTo(map_fa20dd90c08ed0b5a386e7d6d4c57f61);
         
     
-        var popup_bc5ab9fc3d1c16f3b6ff710dd18d739b = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_283dda0871f5c54cabcd75d390cdb496 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_04669281fa71b20812a0ecafa1570310 = $(`<div id=&quot;html_04669281fa71b20812a0ecafa1570310&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q76636148' target='_blank'>Heimatmuseum der Bürgergemeinschaft Wülferode</a></h3>         Kirchrode-Bemerode-Wülferode</div>`)[0];
-                popup_bc5ab9fc3d1c16f3b6ff710dd18d739b.setContent(html_04669281fa71b20812a0ecafa1570310);
+                var html_c59745fe6ed0a5c0e4c1e26d85b8d64a = $(`<div id=&quot;html_c59745fe6ed0a5c0e4c1e26d85b8d64a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q15108126' target='_blank'>Buchdruck-Museum</a></h3>         </div>`)[0];
+                popup_283dda0871f5c54cabcd75d390cdb496.setContent(html_c59745fe6ed0a5c0e4c1e26d85b8d64a);
             
         
 
-        marker_28b8e53bfb5de3604dc5b1de4dea8d76.bindPopup(popup_bc5ab9fc3d1c16f3b6ff710dd18d739b)
+        marker_ce2610877bfff3ddd637ddff34486301.bindPopup(popup_283dda0871f5c54cabcd75d390cdb496)
         ;
 
         
     
     
-            marker_28b8e53bfb5de3604dc5b1de4dea8d76.bindTooltip(
+            marker_ce2610877bfff3ddd637ddff34486301.bindTooltip(
+                `<div>
+                     Buchdruck-Museum
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_e85e00920b9fc2a73cc7be35a25a2bce = L.marker(
+                [52.37601, 9.72684],
+                {}
+            ).addTo(map_fa20dd90c08ed0b5a386e7d6d4c57f61);
+        
+    
+        var popup_9917502f6e1df4f1644d4131e56d37ad = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_5ed48423bb298746e30c44046f413ee7 = $(`<div id=&quot;html_5ed48423bb298746e30c44046f413ee7&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q22692203' target='_blank'>Hannover Trade and Industry Museum</a></h3>         </div>`)[0];
+                popup_9917502f6e1df4f1644d4131e56d37ad.setContent(html_5ed48423bb298746e30c44046f413ee7);
+            
+        
+
+        marker_e85e00920b9fc2a73cc7be35a25a2bce.bindPopup(popup_9917502f6e1df4f1644d4131e56d37ad)
+        ;
+
+        
+    
+    
+            marker_e85e00920b9fc2a73cc7be35a25a2bce.bindTooltip(
+                `<div>
+                     Hannover Trade and Industry Museum
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_f4a14fd0f176cf8ed697754cbda352d2 = L.marker(
+                [52.3625, 9.80483],
+                {}
+            ).addTo(map_fa20dd90c08ed0b5a386e7d6d4c57f61);
+        
+    
+        var popup_db39222fb6b85b7dc67677dc48f0843a = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_f0eb694847491b82e908a9704c879285 = $(`<div id=&quot;html_f0eb694847491b82e908a9704c879285&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q884264' target='_blank'>Blindenmuseum</a></h3>         </div>`)[0];
+                popup_db39222fb6b85b7dc67677dc48f0843a.setContent(html_f0eb694847491b82e908a9704c879285);
+            
+        
+
+        marker_f4a14fd0f176cf8ed697754cbda352d2.bindPopup(popup_db39222fb6b85b7dc67677dc48f0843a)
+        ;
+
+        
+    
+    
+            marker_f4a14fd0f176cf8ed697754cbda352d2.bindTooltip(
+                `<div>
+                     Blindenmuseum
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_48b5f3627e0b21d2e72b2cff310d9e70 = L.marker(
+                [52.369166666, 9.722777777],
+                {}
+            ).addTo(map_fa20dd90c08ed0b5a386e7d6d4c57f61);
+        
+    
+        var popup_57b230920beee3246f141b974a3566ac = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_3bf61dcd82fc4c20cf4ce139dfe5cb93 = $(`<div id=&quot;html_3bf61dcd82fc4c20cf4ce139dfe5cb93&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q40387600' target='_blank'>Museum für Energiegeschichte(n)</a></h3>         </div>`)[0];
+                popup_57b230920beee3246f141b974a3566ac.setContent(html_3bf61dcd82fc4c20cf4ce139dfe5cb93);
+            
+        
+
+        marker_48b5f3627e0b21d2e72b2cff310d9e70.bindPopup(popup_57b230920beee3246f141b974a3566ac)
+        ;
+
+        
+    
+    
+            marker_48b5f3627e0b21d2e72b2cff310d9e70.bindTooltip(
+                `<div>
+                     Museum für Energiegeschichte(n)
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_267ddc6ae512e8110e3d34ced6924ba2 = L.marker(
+                [52.36885, 9.76508],
+                {}
+            ).addTo(map_fa20dd90c08ed0b5a386e7d6d4c57f61);
+        
+    
+        var popup_1138bdd695f4528123010f3eadd22250 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_1c230a98f2448558b34b116d5dc91098 = $(`<div id=&quot;html_1c230a98f2448558b34b116d5dc91098&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q28939753' target='_blank'>Veterinärmedizinhistorisches Museum der Tierärztlichen Hochschule Hannover</a></h3>         </div>`)[0];
+                popup_1138bdd695f4528123010f3eadd22250.setContent(html_1c230a98f2448558b34b116d5dc91098);
+            
+        
+
+        marker_267ddc6ae512e8110e3d34ced6924ba2.bindPopup(popup_1138bdd695f4528123010f3eadd22250)
+        ;
+
+        
+    
+    
+            marker_267ddc6ae512e8110e3d34ced6924ba2.bindTooltip(
+                `<div>
+                     Veterinärmedizinhistorisches Museum der Tierärztlichen Hochschule Hannover
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_5eedfd8156a90dead3aee0d6501365e9 = L.marker(
+                [52.326549, 9.850824],
+                {}
+            ).addTo(map_fa20dd90c08ed0b5a386e7d6d4c57f61);
+        
+    
+        var popup_bf11777e0c82a91de648bd97c8ac9e68 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_809f4503aea0ee0fe5394d320fb97f74 = $(`<div id=&quot;html_809f4503aea0ee0fe5394d320fb97f74&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q76636148' target='_blank'>Heimatmuseum der Bürgergemeinschaft Wülferode</a></h3>         </div>`)[0];
+                popup_bf11777e0c82a91de648bd97c8ac9e68.setContent(html_809f4503aea0ee0fe5394d320fb97f74);
+            
+        
+
+        marker_5eedfd8156a90dead3aee0d6501365e9.bindPopup(popup_bf11777e0c82a91de648bd97c8ac9e68)
+        ;
+
+        
+    
+    
+            marker_5eedfd8156a90dead3aee0d6501365e9.bindTooltip(
                 `<div>
                      Heimatmuseum der Bürgergemeinschaft Wülferode
                  </div>`,
@@ -1582,558 +502,239 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_3f040795787693583b62f87c4fac42a9 = L.marker(
-                [52.32079, 9.81908],
+            var marker_9276e2e9f2ccfa4424e2d5bbd25e6d5c = L.marker(
+                [52.39088, 9.69983],
                 {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
+            ).addTo(map_fa20dd90c08ed0b5a386e7d6d4c57f61);
         
     
-        var popup_fe72d8264e5f4115bffafc2f7ea90ab7 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_a65175fd5b1f0f1fa5f1980ea049f0f3 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_519a7779879532177ad741e22296815d = $(`<div id=&quot;html_519a7779879532177ad741e22296815d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q28739323' target='_blank'>Leibniz-Fachhochschule Hannover, Bibliothek</a></h3>         Hannover</div>`)[0];
-                popup_fe72d8264e5f4115bffafc2f7ea90ab7.setContent(html_519a7779879532177ad741e22296815d);
+                var html_efef146e8508f2f852c3061e4721bd48 = $(`<div id=&quot;html_efef146e8508f2f852c3061e4721bd48&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q98809154' target='_blank'>Galeriegebäude Herrenhausen</a></h3>         </div>`)[0];
+                popup_a65175fd5b1f0f1fa5f1980ea049f0f3.setContent(html_efef146e8508f2f852c3061e4721bd48);
             
         
 
-        marker_3f040795787693583b62f87c4fac42a9.bindPopup(popup_fe72d8264e5f4115bffafc2f7ea90ab7)
+        marker_9276e2e9f2ccfa4424e2d5bbd25e6d5c.bindPopup(popup_a65175fd5b1f0f1fa5f1980ea049f0f3)
         ;
 
         
     
     
-            marker_3f040795787693583b62f87c4fac42a9.bindTooltip(
+            marker_9276e2e9f2ccfa4424e2d5bbd25e6d5c.bindTooltip(
                 `<div>
-                     Leibniz-Fachhochschule Hannover, Bibliothek
+                     Galeriegebäude Herrenhausen
                  </div>`,
                 {&quot;sticky&quot;: true}
             );
         
     
-            var marker_a1c873c35922598bb9076683361a590c = L.marker(
-                [52.32063209, 9.819032076],
+            var marker_361b2c7d6a1c10e1b36dd89d3d69cbe6 = L.marker(
+                [52.386746658, 9.719721581],
                 {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
+            ).addTo(map_fa20dd90c08ed0b5a386e7d6d4c57f61);
         
     
-        var popup_6a9ef95f0e5115a94eff9885077797aa = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_76b9c67c914e04e8d66f24501f951f1b = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_1d18679946e59daa525db9c69a1225d8 = $(`<div id=&quot;html_1d18679946e59daa525db9c69a1225d8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q130988582' target='_blank'>Filminstitut Hannover</a></h3>         Hannover</div>`)[0];
-                popup_6a9ef95f0e5115a94eff9885077797aa.setContent(html_1d18679946e59daa525db9c69a1225d8);
+                var html_fe22a02f459658e045a803950a4c8b3b = $(`<div id=&quot;html_fe22a02f459658e045a803950a4c8b3b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q131862526' target='_blank'>Q131862526</a></h3>         </div>`)[0];
+                popup_76b9c67c914e04e8d66f24501f951f1b.setContent(html_fe22a02f459658e045a803950a4c8b3b);
             
         
 
-        marker_a1c873c35922598bb9076683361a590c.bindPopup(popup_6a9ef95f0e5115a94eff9885077797aa)
+        marker_361b2c7d6a1c10e1b36dd89d3d69cbe6.bindPopup(popup_76b9c67c914e04e8d66f24501f951f1b)
         ;
 
         
     
     
-            marker_a1c873c35922598bb9076683361a590c.bindTooltip(
+            marker_361b2c7d6a1c10e1b36dd89d3d69cbe6.bindTooltip(
                 `<div>
-                     Filminstitut Hannover
+                     Q131862526
                  </div>`,
                 {&quot;sticky&quot;: true}
             );
         
     
-            var marker_13fbea7ba86b3aa674136bb96f863641 = L.marker(
-                [52.32046, 9.81905],
+            var marker_1f3c11228e70c142a3fd9236109765cc = L.marker(
+                [52.422954, 9.732118],
                 {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
+            ).addTo(map_fa20dd90c08ed0b5a386e7d6d4c57f61);
         
     
-        var popup_ac274a878ca998f14541e0797ab86772 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_a6c200722085ddc69f8c1e662daab21f = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_90ccb36bba6dd10aadb3ad28a7995f13 = $(`<div id=&quot;html_90ccb36bba6dd10aadb3ad28a7995f13&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q130548562' target='_blank'>Bibliothek im Kurt-Schwitters-Forum</a></h3>         </div>`)[0];
-                popup_ac274a878ca998f14541e0797ab86772.setContent(html_90ccb36bba6dd10aadb3ad28a7995f13);
+                var html_79d677333e32aa8ca0f70268dcc4d79b = $(`<div id=&quot;html_79d677333e32aa8ca0f70268dcc4d79b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q125123870' target='_blank'>Sammlungszentrum Hannover</a></h3>         </div>`)[0];
+                popup_a6c200722085ddc69f8c1e662daab21f.setContent(html_79d677333e32aa8ca0f70268dcc4d79b);
             
         
 
-        marker_13fbea7ba86b3aa674136bb96f863641.bindPopup(popup_ac274a878ca998f14541e0797ab86772)
+        marker_1f3c11228e70c142a3fd9236109765cc.bindPopup(popup_a6c200722085ddc69f8c1e662daab21f)
         ;
 
         
     
     
-            marker_13fbea7ba86b3aa674136bb96f863641.bindTooltip(
+            marker_1f3c11228e70c142a3fd9236109765cc.bindTooltip(
                 `<div>
-                     Bibliothek im Kurt-Schwitters-Forum
+                     Sammlungszentrum Hannover
                  </div>`,
                 {&quot;sticky&quot;: true}
             );
         
     
-            var marker_c83ae57dd74e601982c2f404b49c0a72 = L.marker(
+            var marker_b569a70e8854b05b3465a3ca93366215 = L.marker(
                 [52.32099, 9.81883],
                 {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
+            ).addTo(map_fa20dd90c08ed0b5a386e7d6d4c57f61);
         
     
-        var popup_78187aa4066ae269dcb3cfe804ef2362 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_2594dcd0a63964fd144336ce168f1889 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_f331325b94c0f398947ef93aee60e91d = $(`<div id=&quot;html_f331325b94c0f398947ef93aee60e91d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q22080297' target='_blank'>Exposeeum</a></h3>         Döhren-Wülfel</div>`)[0];
-                popup_78187aa4066ae269dcb3cfe804ef2362.setContent(html_f331325b94c0f398947ef93aee60e91d);
+                var html_603d0a9aaab461f60915a7e72514b80f = $(`<div id=&quot;html_603d0a9aaab461f60915a7e72514b80f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q22080297' target='_blank'>EXPOSEEUM</a></h3>         </div>`)[0];
+                popup_2594dcd0a63964fd144336ce168f1889.setContent(html_603d0a9aaab461f60915a7e72514b80f);
             
         
 
-        marker_c83ae57dd74e601982c2f404b49c0a72.bindPopup(popup_78187aa4066ae269dcb3cfe804ef2362)
+        marker_b569a70e8854b05b3465a3ca93366215.bindPopup(popup_2594dcd0a63964fd144336ce168f1889)
         ;
 
         
     
     
-            marker_c83ae57dd74e601982c2f404b49c0a72.bindTooltip(
+            marker_b569a70e8854b05b3465a3ca93366215.bindTooltip(
                 `<div>
-                     Exposeeum
+                     EXPOSEEUM
                  </div>`,
                 {&quot;sticky&quot;: true}
             );
         
     
-            var marker_78f80bc4c4345205f8f68b79c03a7bdb = L.marker(
-                [52.32057, 9.81534],
+            var marker_34538bcc3a2d5cc5a03fe273c52cbd68 = L.marker(
+                [52.36889, 9.73827],
                 {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
+            ).addTo(map_fa20dd90c08ed0b5a386e7d6d4c57f61);
         
     
-        var popup_15a9664b2789256bbfb50bf2fe87d6ed = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_7e56b9afdaaef04b29372a8e7cc564e9 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_b0a79759541869bbf1270a2912b8c333 = $(`<div id=&quot;html_b0a79759541869bbf1270a2912b8c333&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q28737509' target='_blank'>Kulturarchiv an der Hochschule Hannover, Dokumentations- und Forschungsstelle Medien</a></h3>         Döhren-Wülfel</div>`)[0];
-                popup_15a9664b2789256bbfb50bf2fe87d6ed.setContent(html_b0a79759541869bbf1270a2912b8c333);
+                var html_cf9502191bfcf9f4df88860577f60daa = $(`<div id=&quot;html_cf9502191bfcf9f4df88860577f60daa&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q108430713' target='_blank'>ZeitZentrum Zivilcourage</a></h3>         </div>`)[0];
+                popup_7e56b9afdaaef04b29372a8e7cc564e9.setContent(html_cf9502191bfcf9f4df88860577f60daa);
             
         
 
-        marker_78f80bc4c4345205f8f68b79c03a7bdb.bindPopup(popup_15a9664b2789256bbfb50bf2fe87d6ed)
+        marker_34538bcc3a2d5cc5a03fe273c52cbd68.bindPopup(popup_7e56b9afdaaef04b29372a8e7cc564e9)
         ;
 
         
     
     
-            marker_78f80bc4c4345205f8f68b79c03a7bdb.bindTooltip(
+            marker_34538bcc3a2d5cc5a03fe273c52cbd68.bindTooltip(
+                `<div>
+                     ZeitZentrum Zivilcourage
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_11b353abae269201f9edbca11167d478 = L.marker(
+                [52.3736, 9.72735],
+                {}
+            ).addTo(map_fa20dd90c08ed0b5a386e7d6d4c57f61);
+        
+    
+        var popup_3935abe7908424746842a72799c33f44 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_20aa5cb905f6263a25691fc2b2a265f4 = $(`<div id=&quot;html_20aa5cb905f6263a25691fc2b2a265f4&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q1802291' target='_blank'>Landeskirchliches Archiv Hannover</a></h3>         </div>`)[0];
+                popup_3935abe7908424746842a72799c33f44.setContent(html_20aa5cb905f6263a25691fc2b2a265f4);
+            
+        
+
+        marker_11b353abae269201f9edbca11167d478.bindPopup(popup_3935abe7908424746842a72799c33f44)
+        ;
+
+        
+    
+    
+            marker_11b353abae269201f9edbca11167d478.bindTooltip(
+                `<div>
+                     Landeskirchliches Archiv Hannover
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_533f6ea0aa1ef449777d4ba61f6d3483 = L.marker(
+                [52.3692, 9.73838],
+                {}
+            ).addTo(map_fa20dd90c08ed0b5a386e7d6d4c57f61);
+        
+    
+        var popup_32da9a1d8b3250ba840c8d075b86379f = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_3aa453cf86e19be0f21bdc090b5d73a9 = $(`<div id=&quot;html_3aa453cf86e19be0f21bdc090b5d73a9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q2359938' target='_blank'>Städtische Galerie Kubus</a></h3>         </div>`)[0];
+                popup_32da9a1d8b3250ba840c8d075b86379f.setContent(html_3aa453cf86e19be0f21bdc090b5d73a9);
+            
+        
+
+        marker_533f6ea0aa1ef449777d4ba61f6d3483.bindPopup(popup_32da9a1d8b3250ba840c8d075b86379f)
+        ;
+
+        
+    
+    
+            marker_533f6ea0aa1ef449777d4ba61f6d3483.bindTooltip(
+                `<div>
+                     Städtische Galerie Kubus
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_f13d90593731181314ff3d5cbc508582 = L.marker(
+                [52.32057, 9.81534],
+                {}
+            ).addTo(map_fa20dd90c08ed0b5a386e7d6d4c57f61);
+        
+    
+        var popup_1ed5a2ed7c1e71f6b4b020d391f75a73 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_c6d61c2b3b0253d7377c752246e86ac8 = $(`<div id=&quot;html_c6d61c2b3b0253d7377c752246e86ac8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q28737509' target='_blank'>Kulturarchiv an der Hochschule Hannover, Dokumentations- und Forschungsstelle Medien</a></h3>         </div>`)[0];
+                popup_1ed5a2ed7c1e71f6b4b020d391f75a73.setContent(html_c6d61c2b3b0253d7377c752246e86ac8);
+            
+        
+
+        marker_f13d90593731181314ff3d5cbc508582.bindPopup(popup_1ed5a2ed7c1e71f6b4b020d391f75a73)
+        ;
+
+        
+    
+    
+            marker_f13d90593731181314ff3d5cbc508582.bindTooltip(
                 `<div>
                      Kulturarchiv an der Hochschule Hannover, Dokumentations- und Forschungsstelle Medien
                  </div>`,
                 {&quot;sticky&quot;: true}
             );
         
-    
-            var marker_08dff403dc8667181939a047d4d12ac0 = L.marker(
-                [52.337562, 9.790149],
-                {}
-            ).addTo(map_42c59ae79452f7262b859247e17e0c5d);
-        
-    
-        var popup_eac540b94cafd680b6d97e33e36eee4a = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-        
-            
-                var html_d6cf1cee804553edb912118c6523d985 = $(`<div id=&quot;html_d6cf1cee804553edb912118c6523d985&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><h3><a href='http://www.wikidata.org/entity/Q17353569' target='_blank'>Friedhofsmuseum Hannover</a></h3>         Döhren-Wülfel</div>`)[0];
-                popup_eac540b94cafd680b6d97e33e36eee4a.setContent(html_d6cf1cee804553edb912118c6523d985);
-            
-        
-
-        marker_08dff403dc8667181939a047d4d12ac0.bindPopup(popup_eac540b94cafd680b6d97e33e36eee4a)
-        ;
-
-        
-    
-    
-            marker_08dff403dc8667181939a047d4d12ac0.bindTooltip(
-                `<div>
-                     Friedhofsmuseum Hannover
-                 </div>`,
-                {&quot;sticky&quot;: true}
-            );
-        
 </script>
 </html>" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe></div></div>
-      <br>
-      <table class="table table-striped" id="mapTable">
-      <thead>
-      <tr>
-      <th><b onclick="sortTable(0)" style="color: #df382c; cursor:pointer">⭿</b> Name</th>
-      <th style="width:20%"><b onclick="sortTable(1)" style="color: #df382c; cursor:pointer">⭿</b> Koordinaten</th>
-      <th><b onclick="sortTable(2)" style="color: #df382c; cursor:pointer">⭿</b> Ort</th>
-      </tr>
-      </thead>
-      <tbody>
-  <tr>
-  <td><span style="display:none">Bibliothek der Bundesanstalt für Geowissenschaften und Rohstoffe und des Landesamts für Bergbau, Energie und Geologie im Geozentrum Hannover</span><a href="http://www.wikidata.org/entity/Q28738627">Bibliothek der Bundesanstalt für Geowissenschaften und Rohstoffe und des Landesamts für Bergbau, Energie und Geologie im Geozentrum Hannover</a></td>
-  <td>52.40406,<br> 9.82038</td>
-  <td>Hannover</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Münzkabinett der TUI AG</span><a href="http://www.wikidata.org/entity/Q76636159">Münzkabinett der TUI AG</a></td>
-  <td>52.384001,<br> 9.811558</td>
-  <td>Hannover</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Galerie am Tiergarten</span><a href="http://www.wikidata.org/entity/Q126991882">Galerie am Tiergarten</a></td>
-  <td>52.361007196,<br> 9.845988302</td>
-  <td>Anderten</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Galerie Christoph Kühl</span><a href="http://www.wikidata.org/entity/Q64737923">Galerie Christoph Kühl</a></td>
-  <td>52.362222222,<br> 9.821944444</td>
-  <td>Hannover</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Blindenmuseum</span><a href="http://www.wikidata.org/entity/Q884264">Blindenmuseum</a></td>
-  <td>52.3625,<br> 9.80483</td>
-  <td>Kirchrode-Bemerode-Wülferode</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Hannoversche Allgemeine Zeitung (HAZ), Redaktionsarchiv</span><a href="http://www.wikidata.org/entity/Q130988639">Hannoversche Allgemeine Zeitung (HAZ), Redaktionsarchiv</a></td>
-  <td>52.34886,<br> 9.80288</td>
-  <td>Hannover</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Sammlungszentrum Hannover</span><a href="http://www.wikidata.org/entity/Q125123870">Sammlungszentrum Hannover</a></td>
-  <td>52.422954,<br> 9.732118</td>
-  <td>Nord</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Institut für Entwicklungsplanung und Strukturforschung GmbH an der Universität Hannover, Bibliothek</span><a href="http://www.wikidata.org/entity/Q28738628">Institut für Entwicklungsplanung und Strukturforschung GmbH an der Universität Hannover, Bibliothek</a></td>
-  <td>52.38,<br> 9.75356</td>
-  <td>Mitte</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Kriminologisches Forschungsinstitut Niedersachsen e. V., Bibliothek</span><a href="http://www.wikidata.org/entity/Q28739606">Kriminologisches Forschungsinstitut Niedersachsen e. V., Bibliothek</a></td>
-  <td>52.3877,<br> 9.74278</td>
-  <td>Mitte</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">WOK – World of Kitchen</span><a href="http://www.wikidata.org/entity/Q1717744">WOK – World of Kitchen</a></td>
-  <td>52.3875,<br> 9.74</td>
-  <td>Hannover</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Schwullesbisches Archiv Hannover</span><a href="http://www.wikidata.org/entity/Q376573">Schwullesbisches Archiv Hannover</a></td>
-  <td>52.383027777,<br> 9.745444444</td>
-  <td>Mitte</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Veterinärmedizinhistorisches Museum der Tierärztlichen Hochschule Hannover</span><a href="http://www.wikidata.org/entity/Q28939753">Veterinärmedizinhistorisches Museum der Tierärztlichen Hochschule Hannover</a></td>
-  <td>52.36885,<br> 9.76508</td>
-  <td>Südstadt-Bult</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Forschungszentrum Musik und Gender, Bibliothek</span><a href="http://www.wikidata.org/entity/Q28739553">Forschungszentrum Musik und Gender, Bibliothek</a></td>
-  <td>52.37705,<br> 9.75855</td>
-  <td>Mitte</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Niedersächsisches Landesamt für Denkmalpflege, Bibliothek</span><a href="http://www.wikidata.org/entity/Q28739593">Niedersächsisches Landesamt für Denkmalpflege, Bibliothek</a></td>
-  <td>52.37595,<br> 9.75388</td>
-  <td>Mitte</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Hi-Score</span><a href="http://www.wikidata.org/entity/Q122228166">Hi-Score</a></td>
-  <td>52.364404,<br> 9.763675</td>
-  <td>Hannover</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Archiv der VGH Versicherungen</span><a href="http://www.wikidata.org/entity/Q130988041">Archiv der VGH Versicherungen</a></td>
-  <td>52.3703133,<br> 9.7456624</td>
-  <td>Hannover</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Niedersächsisches Ministerium für Soziales, Gesundheit und Gleichstellung, Bibliothek</span><a href="http://www.wikidata.org/entity/Q28738636">Niedersächsisches Ministerium für Soziales, Gesundheit und Gleichstellung, Bibliothek</a></td>
-  <td>52.3721,<br> 9.73422</td>
-  <td>Mitte</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Leibniz-Ausstellung im Leibnizhaus</span><a href="http://www.wikidata.org/entity/Q76636151">Leibniz-Ausstellung im Leibnizhaus</a></td>
-  <td>52.371303,<br> 9.732351</td>
-  <td>Hannover</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Niedersächsische Staatskanzlei, Bibliothek</span><a href="http://www.wikidata.org/entity/Q28738626">Niedersächsische Staatskanzlei, Bibliothek</a></td>
-  <td>52.36518,<br> 9.74152</td>
-  <td>Mitte</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Niedersächsische Landesgalerie, Bibliothek</span><a href="http://www.wikidata.org/entity/Q28737668">Niedersächsische Landesgalerie, Bibliothek</a></td>
-  <td>52.36546,<br> 9.74042</td>
-  <td>Mitte</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Niedersächsisches Landesmuseum Hannover</span><a href="http://www.wikidata.org/entity/Q314082">Niedersächsisches Landesmuseum Hannover</a></td>
-  <td>52.36549544,<br> 9.740111115</td>
-  <td>Südstadt-Bult</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Städtische Galerie KUBUS</span><a href="http://www.wikidata.org/entity/Q2359938">Städtische Galerie KUBUS</a></td>
-  <td>52.3692,<br> 9.73838</td>
-  <td>Mitte</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Gottfried Wilhelm Leibniz Bibliothek</span><a href="http://www.wikidata.org/entity/Q1539517">Gottfried Wilhelm Leibniz Bibliothek</a></td>
-  <td>52.36525,<br> 9.73115</td>
-  <td>Hannover</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Gottfried Wilhelm Leibniz Bibliothek</span><a href="http://www.wikidata.org/entity/Q1539517">Gottfried Wilhelm Leibniz Bibliothek</a></td>
-  <td>52.3653,<br> 9.73083</td>
-  <td>Hannover</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Regionaldirektion Niedersachsen-Bremen der Bundesagentur für Arbeit, Bibliothek</span><a href="http://www.wikidata.org/entity/Q28738635">Regionaldirektion Niedersachsen-Bremen der Bundesagentur für Arbeit, Bibliothek</a></td>
-  <td>52.35529,<br> 9.74944</td>
-  <td>Südstadt-Bult</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Iranische Bibliothek in Hannover</span><a href="http://www.wikidata.org/entity/Q1672378">Iranische Bibliothek in Hannover</a></td>
-  <td>52.3894,<br> 9.7225</td>
-  <td>Nord</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Galerei bei Koc</span><a href="http://www.wikidata.org/entity/Q131862526">Galerei bei Koc</a></td>
-  <td>52.386746658,<br> 9.719721581</td>
-  <td>Nord</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Museum Schloss Herrenhausen</span><a href="http://www.wikidata.org/entity/Q127967659">Museum Schloss Herrenhausen</a></td>
-  <td>52.39121,<br> 9.69775</td>
-  <td>Hannover</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Galeriegebäude Herrenhausen</span><a href="http://www.wikidata.org/entity/Q98809154">Galeriegebäude Herrenhausen</a></td>
-  <td>52.39088,<br> 9.69983</td>
-  <td>Herrenhausen-Stöcken</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Evangelische Kirche in Deutschland, Kirchenamt, Bibliothek</span><a href="http://www.wikidata.org/entity/Q28738639">Evangelische Kirche in Deutschland, Kirchenamt, Bibliothek</a></td>
-  <td>52.39323,<br> 9.69217</td>
-  <td>Herrenhausen-Stöcken</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Rosebusch Verlassenschaften</span><a href="http://www.wikidata.org/entity/Q124707819">Rosebusch Verlassenschaften</a></td>
-  <td>52.389,<br> 9.66672</td>
-  <td>Hannover</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Handels- und Industriemuseum</span><a href="http://www.wikidata.org/entity/Q22692203">Handels- und Industriemuseum</a></td>
-  <td>52.37601,<br> 9.72684</td>
-  <td>Mitte</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Landeskirchliches Archiv Hannover</span><a href="http://www.wikidata.org/entity/Q1802291">Landeskirchliches Archiv Hannover</a></td>
-  <td>52.3736,<br> 9.72735</td>
-  <td>Mitte</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Niedersächsisches Ministerium für Ernährung, Landwirtschaft und Verbraucherschutz, Informations- und Bibliotheksdienste</span><a href="http://www.wikidata.org/entity/Q28738638">Niedersächsisches Ministerium für Ernährung, Landwirtschaft und Verbraucherschutz, Informations- und Bibliotheksdienste</a></td>
-  <td>52.37133,<br> 9.7296</td>
-  <td>Mitte</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Bibliothek des Landeskirchenamtes der Evangelisch-lutherischen Landeskirche Hannovers</span><a href="http://www.wikidata.org/entity/Q856518">Bibliothek des Landeskirchenamtes der Evangelisch-lutherischen Landeskirche Hannovers</a></td>
-  <td>52.371577,<br> 9.728828</td>
-  <td>Hannover</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Arbeitsgemeinschaft Niedersächsischer Behördenbibliotheken</span><a href="http://www.wikidata.org/entity/Q28734916">Arbeitsgemeinschaft Niedersächsischer Behördenbibliotheken</a></td>
-  <td>52.37112,<br> 9.72971</td>
-  <td>Mitte</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Niedersächsisches Landesarchiv, Standort Hannover, Dienstbibliothek</span><a href="http://www.wikidata.org/entity/Q33099725">Niedersächsisches Landesarchiv, Standort Hannover, Dienstbibliothek</a></td>
-  <td>52.369694444,<br> 9.730611111</td>
-  <td>Mitte</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Historischer Verein für Niedersachsen, Bibliothek</span><a href="http://www.wikidata.org/entity/Q28738624">Historischer Verein für Niedersachsen, Bibliothek</a></td>
-  <td>52.36964,<br> 9.73041</td>
-  <td>Mitte</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Niedersächsisches Ministerium für Inneres und Sport, Bibliothek</span><a href="http://www.wikidata.org/entity/Q28738634">Niedersächsisches Ministerium für Inneres und Sport, Bibliothek</a></td>
-  <td>52.3687,<br> 9.72858</td>
-  <td>Mitte</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Bibliothek des Niedersächsischen Justizministeriums</span><a href="http://www.wikidata.org/entity/Q28733634">Bibliothek des Niedersächsischen Justizministeriums</a></td>
-  <td>52.36727,<br> 9.73025</td>
-  <td>Mitte</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Museum für Energiegeschichte(n)</span><a href="http://www.wikidata.org/entity/Q40387600">Museum für Energiegeschichte(n)</a></td>
-  <td>52.369166666,<br> 9.722777777</td>
-  <td>Mitte</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Falkenberg Galerie für Neue Kunst</span><a href="http://www.wikidata.org/entity/Q131731708">Falkenberg Galerie für Neue Kunst</a></td>
-  <td>52.36653832,<br> 9.716278733</td>
-  <td>Linden-Limmer</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Oberfinanzdirektion Niedersachsen, Landesweite Bezüge- und Versorgungsstelle (LBV), Bibliothek</span><a href="http://www.wikidata.org/entity/Q28738577">Oberfinanzdirektion Niedersachsen, Landesweite Bezüge- und Versorgungsstelle (LBV), Bibliothek</a></td>
-  <td>52.36274,<br> 9.72144</td>
-  <td>Linden-Limmer</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Buchdruck-Museum</span><a href="http://www.wikidata.org/entity/Q15108126">Buchdruck-Museum</a></td>
-  <td>52.373014,<br> 9.707684</td>
-  <td>Linden-Limmer</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Kindermuseum Zinnober</span><a href="http://www.wikidata.org/entity/Q124433237">Kindermuseum Zinnober</a></td>
-  <td>52.36527,<br> 9.70618</td>
-  <td>Hannover</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Bibliothek der Hochschule Hannover, Zentralbibliothek</span><a href="http://www.wikidata.org/entity/Q130548561">Bibliothek der Hochschule Hannover, Zentralbibliothek</a></td>
-  <td>52.35375,<br> 9.72266</td>
-  <td></td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Gedenkstätte Ahlem</span><a href="http://www.wikidata.org/entity/Q76636143">Gedenkstätte Ahlem</a></td>
-  <td>52.37769,<br> 9.67258</td>
-  <td>Ahlem-Badenstedt-Davenstedt</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Heimatmuseum der Bürgergemeinschaft Wülferode</span><a href="http://www.wikidata.org/entity/Q76636148">Heimatmuseum der Bürgergemeinschaft Wülferode</a></td>
-  <td>52.326549,<br> 9.850824</td>
-  <td>Kirchrode-Bemerode-Wülferode</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Leibniz-Fachhochschule Hannover, Bibliothek</span><a href="http://www.wikidata.org/entity/Q28739323">Leibniz-Fachhochschule Hannover, Bibliothek</a></td>
-  <td>52.32079,<br> 9.81908</td>
-  <td>Hannover</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Filminstitut Hannover</span><a href="http://www.wikidata.org/entity/Q130988582">Filminstitut Hannover</a></td>
-  <td>52.32063209,<br> 9.819032076</td>
-  <td>Hannover</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Bibliothek im Kurt-Schwitters-Forum</span><a href="http://www.wikidata.org/entity/Q130548562">Bibliothek im Kurt-Schwitters-Forum</a></td>
-  <td>52.32046,<br> 9.81905</td>
-  <td></td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Exposeeum</span><a href="http://www.wikidata.org/entity/Q22080297">Exposeeum</a></td>
-  <td>52.32099,<br> 9.81883</td>
-  <td>Döhren-Wülfel</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Kulturarchiv an der Hochschule Hannover, Dokumentations- und Forschungsstelle Medien</span><a href="http://www.wikidata.org/entity/Q28737509">Kulturarchiv an der Hochschule Hannover, Dokumentations- und Forschungsstelle Medien</a></td>
-  <td>52.32057,<br> 9.81534</td>
-  <td>Döhren-Wülfel</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Friedhofsmuseum Hannover</span><a href="http://www.wikidata.org/entity/Q17353569">Friedhofsmuseum Hannover</a></td>
-  <td>52.337562,<br> 9.790149</td>
-  <td>Döhren-Wülfel</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Galerie Neuer Schmuck</span><a href="http://www.wikidata.org/entity/Q107069972">Galerie Neuer Schmuck</a></td>
-  <td></td>
-  <td>Hannover</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Galerie Ulrike Knab</span><a href="http://www.wikidata.org/entity/Q107208645">Galerie Ulrike Knab</a></td>
-  <td></td>
-  <td>Hannover</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Fotogalerie Spectrum</span><a href="http://www.wikidata.org/entity/Q55346361">Fotogalerie Spectrum</a></td>
-  <td></td>
-  <td>Hannover</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Sammlung Albrecht Haupt</span><a href="http://www.wikidata.org/entity/Q130456918">Sammlung Albrecht Haupt</a></td>
-  <td></td>
-  <td>Hannover</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Steinhoff Designmuseum</span><a href="http://www.wikidata.org/entity/Q127963390">Steinhoff Designmuseum</a></td>
-  <td></td>
-  <td>Hannover</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Galerie Drees</span><a href="http://www.wikidata.org/entity/Q130565076">Galerie Drees</a></td>
-  <td></td>
-  <td>Hannover</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Galerie Koch</span><a href="http://www.wikidata.org/entity/Q130933441">Galerie Koch</a></td>
-  <td></td>
-  <td>Hannover</td>
-  </tr>
-  <tr>
-  <td><span style="display:none">Galerie J. H. Bauer</span><a href="http://www.wikidata.org/entity/Q64737927">Galerie J. H. Bauer</a></td>
-  <td></td>
-  <td>Hannover</td>
-  </tr>
-</tbody></table>
-<script>
-function sortTable(n) {
-  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("mapTable");
-  switching = true;
-  // Set the sorting direction to ascending:
-  dir = "asc";
-  /* Make a loop that will continue until
-  no switching has been done: */
-  while (switching) {
-    // Start by saying: no switching is done:
-    switching = false;
-    rows = table.rows;
-    /* Loop through all table rows (except the
-    first, which contains table headers): */
-    for (i = 1; i < (rows.length - 1); i++) {
-      // Start by saying there should be no switching:
-      shouldSwitch = false;
-      /* Get the two elements you want to compare,
-      one from current row and one from the next: */
-      x = rows[i].getElementsByTagName("TD")[n];
-      y = rows[i + 1].getElementsByTagName("TD")[n];
-      /* Check if the two rows should switch place,
-      based on the direction, asc or desc: */
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          // If so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          // If so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      /* If a switch has been marked, make the switch
-      and mark that a switch has been done: */
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      // Each time a switch is done, increase this count by 1:
-      switchcount ++;
-    } else {
-      /* If no switching has been done AND the direction is "asc",
-      set the direction to "desc" and run the while loop again. */
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
-</script>
 
 
 
@@ -2560,4 +1161,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/NFDI4Culture/KarteHannover/blob/main/index.ipynb" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></div></div></footer></body></html>
+</body></html>
